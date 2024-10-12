@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +36,147 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  width: 100%;
+}
+
+/* Grey background for the entire table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f0f0f0; /* Grey background */
+  padding: 10px;
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+/* Add padding to each table cell */
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Extra space for images */
+table td img {
+  width: 70px; /* Adjust image size */
+  height: 70px; /* Adjust image size */
+  object-fit: contain; /* Make sure the image fits within the cell */
+}
+
+/* Sky blue color for Name and Color values */
+table td.name, table td.color {
+  color: #87CEEB; /* Sky blue */
+  font-weight: bold;
+}
+
+/* Add hover effect to the rows */
+table tbody tr:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+
+/* Add padding and spacing between the columns */
+table th, table td {
+  padding: 10px 20px;
+}
+
+/* Make sorting icons align with the text */
+span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Wrapper for the table and filters */
+.table-wrapper {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter section styling */
+.table-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-filters .left, .table-filters .right {
+  display: flex;
+  align-items: center;
+}
+
+.table-filters .left select {
+  margin-right: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.table-filters .reset-btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-filters .reset-btn:hover {
+  background-color: #ff4c4c;
+}
+
+.table-filters .right .search-box {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.table-filters .right .search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Cart button styling */
+.table-filters .cart-btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-filters .cart-btn:hover {
+  background-color: #45a049;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px
 }
