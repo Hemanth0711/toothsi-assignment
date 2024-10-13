@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaTrashAlt } from 'react-icons/fa'; // Trash icon for remove button
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateQuantity } from '../redux/action'; // Redux actions
 
