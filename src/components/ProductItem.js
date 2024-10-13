@@ -30,7 +30,7 @@ const ProductItem = ({ product }) => {
     );
   };
 
-  useEffect(handleQuantity, [quantity]);
+  useEffect(handleQuantity, [quantity, setProducts, product.id]);
 
   // Toggle product selection and add/remove from cart
   const handleSelected = () => {
