@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useProductContext } from '../context/ProductContext';
 import ProductItem from './ProductItem';
 import { FaSortUp, FaSortDown, FaSearch, FaRedoAlt, FaShoppingCart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ProductList = () => {
   const { products, setProducts } = useProductContext();
@@ -100,10 +101,10 @@ const ProductList = () => {
           </div>
 
           {/* Cart Button */}
-          <button className="cart-btn" onClick={() => window.location.href = '/cart'}>
+          <Link to="/cart" className="cart-btn" >
             <FaShoppingCart style={{ marginRight: '5px' }} />
             Go to Cart
-          </button>
+          </Link>
         </div>
       </div>
 

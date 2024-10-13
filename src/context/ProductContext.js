@@ -1,15 +1,14 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
-const ProductContext = createContext();
+const ProductContext = createContext(null);
 
 export const useProductContext = () => useContext(ProductContext);
 
 export const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState([]);
 
   useEffect(() => {
     // Fetch products if not already loaded
-    if (products.length === 0) {
       fetch('https://api.escuelajs.co/api/v1/products')
         .then((res) => res.json())
         .then((data) => {
@@ -24,7 +23,7 @@ export const ProductProvider = ({ children }) => {
           }));
           setProducts(updatedProducts);
         });
-    }
+    
   }, []);
 
   return (
