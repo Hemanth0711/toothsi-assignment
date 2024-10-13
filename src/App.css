@@ -1,3 +1,4 @@
+/* General App Styles */
 .App {
   text-align: center;
   width: 100%;
@@ -38,20 +39,15 @@
   }
 }
 
-table {
-  width: 100%;
-}
-
-/* Grey background for the entire table */
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: #f0f0f0; /* Grey background */
+  margin: 20px 0;
   padding: 10px;
-  margin: 20px 0; /* Add some margin for spacing */
 }
 
-/* Add padding to each table cell */
 table th, table td {
   padding: 12px 15px;
   text-align: left;
@@ -60,28 +56,22 @@ table th, table td {
 
 /* Extra space for images */
 table td img {
-  width: 70px; /* Adjust image size */
-  height: 70px; /* Adjust image size */
-  object-fit: contain; /* Make sure the image fits within the cell */
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
-/* Sky blue color for Name and Color values */
+/* Sky blue for Name and Color */
 table td.name, table td.color {
-  color: #87CEEB; /* Sky blue */
+  color: #87CEEB;
   font-weight: bold;
 }
 
-/* Add hover effect to the rows */
+/* Hover effect */
 table tbody tr:hover {
-  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  background-color: #e0e0e0;
 }
 
-/* Add padding and spacing between the columns */
-table th, table td {
-  padding: 10px 20px;
-}
-
-/* Make sorting icons align with the text */
 span {
   display: inline-block;
   vertical-align: middle;
@@ -89,7 +79,7 @@ span {
   cursor: pointer;
 }
 
-/* Wrapper for the table and filters */
+/* Wrapper for Table and Filters */
 .table-wrapper {
   margin: 20px;
   padding: 20px;
@@ -98,7 +88,7 @@ span {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Filter section styling */
+/* Filter Section */
 .table-filters {
   display: flex;
   justify-content: space-between;
@@ -111,7 +101,7 @@ span {
   align-items: center;
 }
 
-.table-filters .left select {
+.table-filters select {
   margin-right: 15px;
   padding: 5px 10px;
   font-size: 14px;
@@ -119,6 +109,7 @@ span {
   border: 1px solid #ddd;
 }
 
+/* Reset Button */
 .table-filters .reset-btn {
   display: flex;
   align-items: center;
@@ -134,7 +125,8 @@ span {
   background-color: #ff4c4c;
 }
 
-.table-filters .right .search-box {
+/* Search Box */
+.table-filters .search-box {
   display: flex;
   align-items: center;
   padding: 5px;
@@ -143,14 +135,14 @@ span {
   margin-right: 20px;
 }
 
-.table-filters .right .search-box input {
+.table-filters .search-box input {
   border: none;
   outline: none;
   padding: 5px;
   font-size: 14px;
 }
 
-/* Cart button styling */
+/* Cart Button */
 .table-filters .cart-btn {
   display: flex;
   align-items: center;
@@ -166,17 +158,93 @@ span {
   background-color: #45a049;
 }
 
-/* Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #f0f0f0;
-  padding: 10px;
-  margin-top: 20px;
+/* Cart Summary */
+.cart-summary {
+  width: 80%;
+  margin: 0 auto;
 }
 
-table th, table td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px
+/* Cart Content Layout */
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cart Table */
+.cart-table {
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.cart-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-row td {
+  padding: 15px 10px;
+  vertical-align: middle;
+}
+
+/* Product Info */
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+/* Quantity Input */
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+/* Cart Total Card */
+.cart-total-card {
+  width: 30%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.cart-total-card h3 {
+  margin-bottom: 20px;
+}
+
+.subtotal, .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #45a049;
 }

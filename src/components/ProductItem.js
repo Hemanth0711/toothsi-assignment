@@ -48,7 +48,7 @@ const ProductItem = ({ product }) => {
   return (
     <tr>
       <td>
-        <img src={product.images[0]} alt={product.title} width="50" height="50" />
+        <img src={product.images[0] || product.images[1]} alt={product.title} width="50" height="50" />
       </td>
       <td>{product.title}</td>
       <td>{product.color || 'N/A'}</td>
